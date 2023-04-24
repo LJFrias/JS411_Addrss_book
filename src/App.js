@@ -10,7 +10,7 @@ export default function App() {
     fetch("https://randomuser.me/api?results=25")
     .then( (response) => response.json())
     .then( (data) => {
-      setPeople([data.results])
+      setPeople(data.results)
     })
   }, [])
 
